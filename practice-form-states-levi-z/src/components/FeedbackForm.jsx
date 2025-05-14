@@ -21,7 +21,7 @@ const FeedbackForm = () => {
         <h1>Feedback Form</h1>
         <form>
           <label>
-            Name:
+            <b>Name:</b><br />
                     <input
               type="text"
               name="name"
@@ -31,7 +31,7 @@ const FeedbackForm = () => {
           </label>
           <br />
           <label>
-            Email:
+            <b>Email:</b> <br />
             <input
               type="email"
               name="email"
@@ -41,7 +41,7 @@ const FeedbackForm = () => {
           </label>
           <br />
           <label>
-            Feedback:
+            <b>Feedback:</b> <br />
             <textarea
               type="textarea"
               name="feedback"
@@ -50,12 +50,13 @@ const FeedbackForm = () => {
               onChange={handleChange}
             />
           </label><br />
-          <button >Submit</button>
+          <button ><b>Submit</b></button>
         </form>
-        <h2>Preview</h2>
-        <p>Name: {formData.name}</p>
-        <p>Email: {formData.email}</p>
-        <p>Feedback: {formData.feedback}</p>
+        <h2>Feedback Preview</h2><hr></hr>
+        <p><i>Is it true, is it kind, is it necessary? <br />-Socrates</i></p>
+        <p><h4>Name:</h4> {formData.name}</p>
+        <p><h4>Email:</h4> {formData.email}</p>
+        <p><h4>Feedback:</h4> {formData.feedback}</p>
       </div>
     );
 }
